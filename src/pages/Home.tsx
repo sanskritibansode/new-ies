@@ -23,26 +23,23 @@ const Home = () => {
     }
   }, []);
 
-return (
-  <div
-    className="min-h-screen flex flex-col bg-cover bg-center"
-    style={{ backgroundImage: "url('/images/ies.jpg')" }}
-  >
-    <Navbar />
-
-    <main className="flex-grow bg-black bg-opacity-40">
-      <Hero />
-      <section id="about">
-        <About />
-      </section>
-      <ImageCarousel />
-      <Features />
-      <section id="contact">
-        <ContactForm />
-      </section>
-    </main>
-
-    <Footer />
-  </div>
-);
-export default Home;
+  return (
+    <div className="min-h-screen flex flex-col bg-festblue">
+      <Navbar />
+      
+      <main className="flex-grow">
+        <Hero />
+        <section id="about">
+          <About />
+        </section>
+        <ImageCarousel />
+        <Features />
+        <section id="contact">
+          <ContactForm />
+        </section>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+};
